@@ -483,7 +483,7 @@ textarea {
   content: "";
   position: absolute;
   top: 25%;
-  left: 55%;
+  left: 65%;
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
@@ -527,7 +527,7 @@ textarea {
   content: "";
   position: absolute;
   top: 25%;
-  left: 55%;
+  left: 65%;
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
@@ -571,7 +571,7 @@ textarea {
   content: "";
   position: absolute;
   top: 25%;
-  left: 55%;
+  left: 65%;
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
@@ -620,6 +620,7 @@ textarea {
 
 .backdrop {
   position: fixed;
+  z-index: 999;
   top: 0;
   left: 0;
   width: 100%;
@@ -635,11 +636,11 @@ textarea {
   display: flex;
   flex-direction: column;
   position: absolute;
-  min-width: 400px;
-  min-height: 500px;
+  width: 310px;
+  min-height: 502px;
   top: 50%;
   left: 50%;
-  padding: 40px;
+  padding: 5px;
   background-color: #e17992;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -667,15 +668,15 @@ textarea {
   fill: #d41443;
 }
 .modal-purchase-form {
-  margin-top: 30px;
+  margin-top: 0px;
 }
 .modal-purchase-title {
   font-family: "Titan One", cursive;
-  width: 370px;
   height: 60px;
+  margin-top: 35px;
   margin-bottom: 0;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 15px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
@@ -704,7 +705,6 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: none;
   border-radius: 4px;
-  background-color: transparent;
   color: #000000;
 }
 .modal-purchase-lable-txt {
@@ -732,7 +732,7 @@ textarea {
   color: #ffff;
   background-color: #d41443;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 4px;
+  border-radius: 22px;
   border: none;
 }
 
@@ -747,11 +747,11 @@ textarea {
 
 .checkbox {
   position: relative;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 .checkbox-text {
   margin-left: 30px;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.166;
   color: #000000;
 }
@@ -782,11 +782,12 @@ textarea {
   border: none;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+.checkbox-old:checked ~ .checkbox-icon {
+  background-color: #d41443;
+  border: none;
+}
 .checkbox-old:focus ~ .checkbox-icon {
   border-color: #d41443;
-}
-.checkbox__old :checked ~ .checkbox__text {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .hero-container {
@@ -1148,6 +1149,8 @@ h1 > span {
 
 .galery {
   width: 100%;
+  margin-top: 97px;
+  background: linear-gradient(#fff5f6 50%, #ffffff 50%);
 }
 
 .slide-sec {
@@ -1255,13 +1258,16 @@ h1 > span {
 }
 
 .how-it {
+  background-image: url(/m-splash-of-milk-min.9b382cef.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   padding-top: 125px;
+  background-color: #fff5f6;
 }
 
 .how-second-titel {
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
+  font-family: "Titan One", cursive;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -1272,9 +1278,7 @@ h1 > span {
 
 .how-fitst-title {
   width: 200px;
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
+  font-family: "Titan One", cursive;
   font-size: 34px;
   line-height: 39px;
   text-align: center;
@@ -1287,21 +1291,111 @@ h1 > span {
 }
 
 .how-dark-text {
-  font-family: DM Sans;
-  font-style: normal;
+  width: 220px;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 12px;
-  line-height: 162%;
+  line-height: 19px;
   color: #000000;
+  margin-bottom: 47px;
 }
 
 .how-light-text {
-  font-family: DM Sans;
-  font-style: normal;
+  width: 220px;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
   color: #907e82;
+  margin-bottom: 17px;
+}
+
+.btn-read-more {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  display: inline;
+  width: 176px;
+  height: 44px;
+  font-size: 16px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  border-radius: 22px;
+  border-style: none;
+  background-color: #ffffff;
+  color: #d41443;
+  margin-bottom: 39px;
+  cursor: pointer;
+}
+
+.how-size {
+  width: 280px;
+  height: 279px;
+  margin-bottom: 46px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .how-size {
+    width: 340px;
+    height: 339px;
+  }
+}
+@media screen and (min-width: 1279px) {
+  .how-size {
+    width: 516px;
+    height: 516px;
+  }
+}
+
+.cow {
+  width: 33px;
+  height: 50px;
+  margin-bottom: 16px;
+}
+
+.how-text-position {
+  position: relative;
+  padding: 0 30px;
+}
+
+.apple {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+}
+
+.heart {
+  width: 44px;
+  height: 50px;
+  margin-bottom: 16px;
+}
+
+.measure {
+  font-family: "Titan One", cursive;
+  color: #d41443;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.how-text2 {
+  font-family: "DM Sans", sans-serif;
+  color: #000000;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  width: 230px;
+  height: 36px;
+  margin-bottom: 38px;
+}
+
+.span {
+  display: block;
+  margin-top: 10px;
 }
 
 footer {
