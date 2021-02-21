@@ -11,6 +11,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.04em;
+  overflow-x: hidden;
 }
 
 h1,
@@ -22,13 +23,6 @@ p {
 }
 
 ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-li {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -61,24 +55,19 @@ textarea {
 }
 
 .container {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 20px;
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 320px;
-  }
+  width: 320px;
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
-    padding: 0 35px;
+    width: 740px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1280px;
-    padding: 0 115px;
+    width: 1090px;
   }
 }
 
@@ -102,10 +91,15 @@ textarea {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.31;
+  height: 44px;
   text-align: center;
   color: #d41443;
   background-color: #ffffff;
   outline: none;
+}
+
+header {
+  position: relative;
 }
 
 .header-hero {
@@ -184,8 +178,8 @@ textarea {
   overflow-y: scroll;
   display: block;
   z-index: 10;
-  height: 100%;
-  position: fixed;
+  height: 100vh;
+  position: absolute;
   transform: translate(15%, 0);
   transition: 0.5s;
   width: 100%;
@@ -791,7 +785,6 @@ textarea {
 }
 
 .hero-container {
-  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -933,7 +926,7 @@ h1 > span {
   }
 }
 
-.hero-arrow {
+.hero-icon {
   position: absolute;
   left: 154px;
   top: 347px;
@@ -941,45 +934,123 @@ h1 > span {
   height: 18px;
 }
 
-.cafes {
-  position: absolute;
-  display: flex;
-  flex-direction: row-reverse;
-  left: 691px;
-  top: 94px;
+.tasty {
+  display: none;
+}
+@media (min-width: 768px) {
+  .tasty {
+    display: block;
+    position: absolute;
+    left: 691px;
+    top: 94px;
+  }
 }
 
-.cafes-number {
-  font-family: Titan One;
+.tasty-girl {
+  display: none;
+}
+@media (min-width: 768px) {
+  .tasty-girl {
+    display: block;
+    position: absolute;
+    width: 168px;
+    left: 566px;
+    top: 266px;
+  }
+}
+@media (min-width: 1280px) {
+  .tasty-girl {
+    width: 293px;
+  }
+}
+
+.tasty-list {
+  display: none;
+}
+@media (min-width: 768px) {
+  .tasty-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    text-align: right;
+  }
+}
+@media (min-width: 1280px) {
+  .tasty-list {
+    top: 35px;
+  }
+}
+
+.tasty-item {
+  position: relative;
+}
+.tasty-item:first-child {
+  margin-bottom: 20px;
+}
+
+.tasty-item::after {
+  display: none;
+}
+@media (min-width: 768px) {
+  .tasty-item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    transform: translate(50%, -50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: #ffffff;
+  }
+}
+@media (min-width: 1280px) {
+  .tasty-item::after {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.tasty-number {
+  display: inline-block;
+  font-family: "Titan One", cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
   line-height: 32px;
-  text-align: right;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  letter-spacing: 0.91;
   color: #d41443;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .tasty-number {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 1.15;
+  }
 }
 
-.cafes-number > span {
-  display: block;
+.tasty-text {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 8px;
-  line-height: 10px;
-  text-align: right;
+  letter-spacing: 1.5;
   color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
-
-.cafes-box {
-  width: 16px;
-  height: 16px;
-  left: 734px;
-  top: 94px;
-  background: #ffffff;
-  border-radius: 50%;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
+@media (min-width: 1280px) {
+  .tasty-text {
+    font-size: 8px;
+    letter-spacing: 1.28;
+  }
 }
 
 .cafe-section {
@@ -1074,66 +1145,69 @@ h1 > span {
 }
 
 .cafe-btn {
-  margin-top: 46px;
-  margin-bottom: 123px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media screen and (min-width: 768px) {
-  .cafe-btn {
-    margin-top: 81px;
-    margin-bottom: 158px;
-    flex-direction: row;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .cafe-btn {
-    margin-top: 86px;
-    margin-bottom: 165px;
-    flex-direction: row;
-    align-items: center;
-  }
+  text-align: center;
 }
 
-@media screen and (min-width: 480px) {
-  .cafe-btn-item {
-    min-width: 158px;
-  }
+.cafe-btn-list {
+  margin-top: 46px;
+  margin-bottom: 123px;
 }
 @media screen and (min-width: 768px) {
-  .cafe-btn-item {
-    min-width: 191px;
+  .cafe-btn-list {
+    margin-top: 81px;
+    margin-bottom: 158px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1280px) {
-  .cafe-btn-item {
-    min-width: 198px;
+  .cafe-btn-list {
+    margin-top: 86px;
+    margin-bottom: 165px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
   }
 }
 
 .btn-locations {
   padding: 12px 17px 12px;
   margin-bottom: 10px;
+  min-width: 158px;
   color: #ffffff;
   background-color: #d41443;
 }
 @media screen and (min-width: 768px) {
   .btn-locations {
     margin-right: 14px;
+    min-width: 191px;
   }
 }
 @media screen and (min-width: 1280px) {
   .btn-locations {
     margin-right: 15px;
+    min-width: 198px;
   }
 }
 
 .btn-franchise {
   padding: 12px 31px 12px;
+  min-width: 158px;
   color: #d41443;
   background-color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .btn-franchise {
+    margin-right: 14px;
+    min-width: 174px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .btn-franchise {
+    margin-right: 15px;
+    min-width: 180px;
+  }
 }
 
 .vector {
@@ -1141,35 +1215,87 @@ h1 > span {
   align-items: baseline;
 }
 
-@media screen and (min-width: 768px) {
-  .cafe-btn-list {
-    display: flex;
-  }
-}
-
-.galery {
+.galery-container {
   width: 100%;
   margin-top: 97px;
   background: linear-gradient(#fff5f6 50%, #ffffff 50%);
 }
 
+.galery-picture {
+  width: 320px;
+}
+@media screen and (min-width: 768px) {
+  .galery-picture {
+    width: 740px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .galery-picture {
+    width: 1200px;
+  }
+}
+
+.galery-img {
+  width: 100%;
+}
+
 .slide-sec {
   background-color: #ffffff;
   color: #000000;
-  /* Точки*/
-  /*Маркеры слайда*/
+  padding-top: 154px;
+  padding-bottom: 86px;
 }
+@media screen and (min-width: 768px) {
+  .slide-sec {
+    padding-top: 121px;
+    padding-bottom: 119px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .slide-sec {
+    padding-top: 123px;
+    padding-bottom: 132px;
+  }
+}
+
+.gradient-container {
+  position: absolute;
+  top: 38px;
+  left: 50px;
+  display: inline-block;
+  width: 180px;
+  height: 250px;
+  background-image: repeating-linear-gradient(to bottom, transparent 0px, transparent 29px, #e1e1e1 1px, #e1e1e1 30px);
+}
+@media screen and (min-width: 768px) {
+  .gradient-container {
+    top: 40px;
+    left: 50px;
+    width: 524px;
+    height: 100px;
+    background-image: repeating-linear-gradient(to bottom, transparent 0px, transparent 32px, #e1e1e1 1px, #e1e1e1 33px);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gradient-container {
+    width: 813px;
+    height: 80px;
+  }
+}
+
 .slide-sec-container {
-  padding-top: 80px;
-  padding-bottom: 85px;
   position: relative;
+  display: block;
+  text-align: center;
 }
-.slide-sec .customer-photo {
+
+.customer-photo {
   display: flex;
   justify-content: center;
   margin-bottom: 29px;
 }
-.slide-sec .customer-review {
+
+.customer-review {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 50px;
@@ -1178,11 +1304,32 @@ h1 > span {
   height: 100%;
   background-color: #fafafa;
 }
-.slide-sec .p-gradient {
+@media screen and (min-width: 768px) {
+  .customer-review {
+    width: 620px;
+    height: 164px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .customer-review {
+    width: 926px;
+    height: 138px;
+    margin-bottom: 15px;
+  }
+}
+
+.p-gradient {
   padding: 43px 66px 26px 57px;
   text-align: center;
+  position: relative;
 }
-.slide-sec .sample {
+@media screen and (min-width: 768px) {
+  .p-gradient {
+    padding: 0;
+  }
+}
+
+.sample {
   position: relative;
   font-family: DM Sans;
   font-style: normal;
@@ -1190,38 +1337,50 @@ h1 > span {
   font-size: 12px;
   line-height: 2.55;
 }
-.slide-sec .p-gradient p {
-  text-decoration: underline;
-  display: inline;
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: 100% 1px;
-  background-image: linear-gradient(#e1e1e1, #e1e1e1);
+@media screen and (min-width: 768px) {
+  .sample {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 47px;
+    padding-bottom: 34px;
+  }
 }
-.slide-sec .p-gradient::before {
+
+.p-gradient::before {
   position: absolute;
-  top: 32%;
-  left: 27%;
+  top: 25px;
+  left: 60px;
   content: url(/“.eaa3cbfa.svg);
   padding-left: 0;
+  z-index: 0;
 }
-.slide-sec .customer {
+@media screen and (min-width: 768px) {
+  .p-gradient::before {
+    top: 25px;
+    left: 40px;
+  }
+}
+
+.customer {
   font-size: 14px;
   line-height: 1.86;
 }
-.slide-sec .customer-navigation {
+
+/* Точки*/
+.customer-navigation {
   display: flex;
-  flex-wrap: wrap;
-  display: block;
-  align-items: center;
+  justify-content: center;
 }
-.slide-sec .customer-nav {
+
+.customer-nav {
   display: flex;
 }
-.slide-sec .customer-dots {
+
+.customer-dots {
   margin-bottom: 18px;
 }
-.slide-sec .dots {
+
+.dots {
   display: inline-block;
   width: 4px;
   height: 4px;
@@ -1229,27 +1388,41 @@ h1 > span {
   color: #c7133e;
   margin-right: 10px;
 }
-.slide-sec .pagination-section {
-  position: relative;
-  width: 100%;
+
+/*Маркеры слайда*/
+.pagination-section {
+  justify-content: center;
   display: flex;
 }
-.slide-sec .pagination {
+
+.slide-svg:not(:last-child) {
+  margin-right: 18px;
+}
+
+.custumer-tittle {
+  padding: 18px;
+  text-align: center;
+}
+
+.pagination {
   position: absolute;
   margin-right: 18px;
 }
-.slide-sec .circle {
+
+.circle {
   position: absolute;
   width: 12px;
   height: 12px;
   background-color: #d9d9d9;
   border-radius: 50%;
 }
-.slide-sec .circle:hover::after {
+
+.circle:hover::after {
   color: red;
   cursor: pointer;
 }
-.slide-sec .visually-hidden {
+
+.visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
