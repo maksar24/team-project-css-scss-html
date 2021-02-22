@@ -69,7 +69,7 @@ textarea {
     width: 740px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1090px;
   }
@@ -112,7 +112,7 @@ header {
     height: 399px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   header {
     height: 665px;
   }
@@ -121,7 +121,7 @@ header {
 .header-hero {
   position: relative;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .header-hero {
     height: 665px;
   }
@@ -368,7 +368,7 @@ header {
     font-size: 48px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .products-section-title {
     margin-bottom: 260px;
     font-size: 58px;
@@ -383,7 +383,7 @@ header {
   line-height: 1.15;
   color: #ffffff;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .products .card-title {
     font-size: 30px;
     line-height: 1.13;
@@ -399,7 +399,7 @@ header {
   height: 6px;
   background-image: url(/points.04f2542b.png);
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .products .card-title::after {
     top: 210%;
   }
@@ -417,7 +417,7 @@ header {
     line-height: 1.15;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .products-motto {
     font-size: 30px;
     line-height: 1.13;
@@ -435,7 +435,7 @@ header {
     line-height: 1.76;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .products-text {
     font-size: 16px;
   }
@@ -446,7 +446,7 @@ header {
   margin-left: -20px;
   margin-top: -20px;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .products-set {
     margin-left: -25px;
     margin-top: -25px;
@@ -470,7 +470,7 @@ header {
     flex-basis: calc(100% / 3 - 40px);
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .products-item {
     padding: 165px 45px 50px 45px;
     flex-basis: calc(100% / 3 - 50px);
@@ -519,7 +519,7 @@ header {
     background-image: url(/t-products_ice-cream@2x.037f6765.png);
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .products .ice-cream::before {
     top: -8%;
     left: 51%;
@@ -528,7 +528,7 @@ header {
     background-image: url(/d-products_ice-cream.b860fd71.png);
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .products .ice-cream::before {
     background-image: url(/d-products_ice-cream@2x.8dfeee71.png);
   }
@@ -569,7 +569,7 @@ header {
     background-image: url(/t-products_ice-coffee@2x.ae2d8cbf.png);
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .products .ice-coffee::before {
     top: -8%;
     left: 51%;
@@ -578,7 +578,7 @@ header {
     background-image: url(/d-products_ice-coffee.9db37686.png);
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .products .ice-coffee::before {
     background-image: url(/d-products_ice-coffee@2x.bb0cdb9b.png);
   }
@@ -618,7 +618,7 @@ header {
     background-image: url(/t-products_milkshakes@2x.be3de25d.png);
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .products .milkshakes::before {
     top: -8%;
     left: 51%;
@@ -627,7 +627,7 @@ header {
     background-image: url(/d-products_milkshakes.3c60b956.png);
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .products .milkshakes::before {
     background-image: url(/d-products_milkshakes@2x.e00c9d43.png);
   }
@@ -665,13 +665,38 @@ header {
   min-height: 502px;
   top: 50%;
   left: 50%;
-  padding: 5px;
+  padding: 10px;
   background-color: #fff5f6;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  border-radius: 14px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .modal-purchase {
+    width: 410px;
+    padding: 25px;
+  }
+}
+.modal-purchase-circle {
+  position: absolute;
+  top: 20%;
+  left: 1%;
+  background-color: #ffa5ba;
+  width: 80px;
+  height: 250px;
+  border-radius: 8%;
+}
+@media screen and (min-width: 768px) {
+  .modal-purchase-circle {
+    top: 20%;
+    left: 4%;
+    background-color: #ffa5ba;
+    width: 80px;
+    height: 250px;
+    border-radius: 5%;
+  }
 }
 .modal-purchase-close {
   position: absolute;
@@ -706,6 +731,13 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: #d41443;
+}
+@media screen and (min-width: 768px) {
+  .modal-purchase-title {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.25;
+  }
 }
 .modal-purchase-input {
   display: flex;
@@ -775,10 +807,17 @@ header {
   margin-top: 0px;
 }
 .checkbox-text {
-  margin-left: 30px;
+  margin-left: 20px;
   font-size: 10px;
   line-height: 1.166;
   color: #000000;
+}
+@media screen and (min-width: 768px) {
+  .checkbox-text {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-left: 25px;
+  }
 }
 .checkbox-link {
   display: inline-flex;
@@ -800,7 +839,7 @@ header {
 .checkbox-icon-svg {
   width: 15px;
   height: 15px;
-  fill: #e17992;
+  fill: #fff5f6;
 }
 .checkbox-old:focus:checked ~ .checkbox-icon {
   background-color: #d41443;
@@ -819,7 +858,7 @@ header {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .hero-container {
     height: 500px;
   }
@@ -834,7 +873,7 @@ header {
     max-width: 162px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .hero-text {
     max-width: 277px;
   }
@@ -853,7 +892,7 @@ h1 {
     line-height: 25px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   h1 {
     font-size: 38px;
     line-height: 44px;
@@ -874,7 +913,7 @@ h1 > span {
     line-height: 30px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   h1 > span {
     font-size: 58px;
     line-height: 53px;
@@ -892,7 +931,7 @@ h1 > span {
     padding-left: 14px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .text-button-cont {
     padding-top: 172px;
     padding-left: 64px;
@@ -910,7 +949,7 @@ h1 > span {
   border-radius: 20px;
   border: none;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .hero-btn-products,
 .hero-btn-how {
     font-size: 14px;
@@ -922,7 +961,7 @@ h1 > span {
   color: #d41443;
   background-color: #ffffff;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .hero-btn-how {
     font-size: 14px;
     line-height: 18px;
@@ -947,7 +986,7 @@ h1 > span {
     top: 31px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .hero-box {
     left: 395px;
     top: 52px;
@@ -969,7 +1008,7 @@ h1 > span {
     padding-top: 31px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .hero-image {
     width: 236px;
     height: 557px;
@@ -986,7 +1025,7 @@ h1 > span {
     position: absolute;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .hero-bio-eco {
     left: 30px;
     bottom: 40px;
@@ -1004,7 +1043,7 @@ h1 > span {
   line-height: 12px;
   color: #ffffff;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .bio-eco-text {
     width: 210px;
     height: 78px;
@@ -1026,7 +1065,7 @@ h1 > span {
     box-sizing: unset;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .milk-pic {
     width: 188px;
     height: 191px;
@@ -1040,7 +1079,7 @@ h1 > span {
   width: 18px;
   height: 18px;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .hero-icon {
     top: 385px;
     left: 200px;
@@ -1060,7 +1099,7 @@ h1 > span {
     top: 94px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .cafes {
     left: 675px;
     top: 114px;
@@ -1079,7 +1118,7 @@ h1 > span {
     top: 266px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .tasty-girl {
     width: 293px;
     height: 232px;
@@ -1103,7 +1142,7 @@ h1 > span {
     text-align: right;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .cafes-list {
     top: 35px;
     left: 315px;
@@ -1139,7 +1178,7 @@ h1 > span {
     background-color: #ffffff;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .cafes-item::after {
     width: 30px;
     height: 30px;
@@ -1164,7 +1203,7 @@ h1 > span {
     letter-spacing: 0.04em;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .cafes-number {
     font-size: 46px;
     line-height: 53px;
@@ -1180,7 +1219,7 @@ h1 > span {
   margin: 0;
   padding: 0;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .cafes-text {
     font-size: 14px;
     line-height: 18px;
@@ -1202,7 +1241,7 @@ h1 > span {
     margin-bottom: 81px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .card-list {
     margin-bottom: 86px;
   }
@@ -1227,7 +1266,7 @@ h1 > span {
     line-height: 29px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts-card {
     font-size: 16px;
     max-width: 330px;
@@ -1257,7 +1296,7 @@ h1 > span {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .card-name {
     margin-bottom: 32px;
   }
@@ -1289,7 +1328,7 @@ h1 > span {
     line-height: 24px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .card-description {
     margin-bottom: 32;
     line-height: 29px;
@@ -1327,7 +1366,7 @@ h1 > span {
     margin-bottom: 16px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .card-visit-hours {
     margin-bottom: 32;
     padding-bottom: 32px;
@@ -1346,7 +1385,7 @@ h1 > span {
     line-height: 25px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts-link {
     line-height: 30px;
   }
@@ -1369,7 +1408,7 @@ h1 > span {
     justify-content: center;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .cafe-btn-list {
     margin-top: 86px;
     margin-bottom: 165px;
@@ -1396,7 +1435,7 @@ h1 > span {
     min-width: 191px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .btn-locations {
     margin-right: 15px;
     min-width: 198px;
@@ -1419,7 +1458,7 @@ h1 > span {
     min-width: 174px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .btn-franchise {
     margin-right: 15px;
     min-width: 180px;
@@ -1762,7 +1801,7 @@ body.locations-modal-open {
     background-image: none;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .how-it {
     width: 1090px;
   }
@@ -1777,6 +1816,22 @@ body.locations-modal-open {
   color: #ffa5ba;
   margin-bottom: 15px;
 }
+@media screen and (min-width: 768px) {
+  .how-second-titel {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .how-second-titel {
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    margin-bottom: 15px;
+  }
+}
 
 .how-fitst-title {
   width: 200px;
@@ -1790,6 +1845,22 @@ body.locations-modal-open {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 26px;
+}
+@media screen and (min-width: 768px) {
+  .how-fitst-title {
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.04em;
+    width: 440px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .how-fitst-title {
+    font-size: 58px;
+    line-height: 66px;
+    letter-spacing: 0.06em;
+    width: 634px;
+  }
 }
 
 .how-dark-text {
@@ -1809,7 +1880,7 @@ body.locations-modal-open {
     letter-spacing: 0.04em;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .how-dark-text {
     width: 463px;
   }
@@ -1832,7 +1903,7 @@ body.locations-modal-open {
     letter-spacing: 0.04em;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .how-light-text {
     width: 463px;
   }
@@ -1845,8 +1916,8 @@ body.locations-modal-open {
   display: inline;
   width: 176px;
   height: 44px;
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 14px;
+  line-height: 18px;
   align-items: center;
   text-align: center;
   border-radius: 22px;
@@ -1856,6 +1927,12 @@ body.locations-modal-open {
   margin-bottom: 39px;
   cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+  .btn-read-more {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
 
 .how-size {
   width: 280px;
@@ -1863,6 +1940,7 @@ body.locations-modal-open {
   margin-bottom: 46px;
   margin-left: auto;
   margin-right: auto;
+  object-fit: cover;
 }
 @media screen and (min-width: 768px) {
   .how-size {
@@ -1877,13 +1955,22 @@ body.locations-modal-open {
     width: 516px;
     height: 516px;
     margin-right: 74px;
+    object-fit: cover;
   }
 }
 
 .cow {
-  width: 33px;
-  height: 50px;
   margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .cow {
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cow {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1892,7 +1979,7 @@ body.locations-modal-open {
     display: flex;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .how-splash {
     width: 1090px;
     display: flex;
@@ -1902,7 +1989,7 @@ body.locations-modal-open {
 .how-text-position {
   padding: 0 30px;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .how-text-position {
     width: 1090px;
     padding-top: 47px;
@@ -1911,23 +1998,22 @@ body.locations-modal-open {
 
 @media screen and (min-width: 768px) {
   .how-desktop {
-    width: 740px;
     display: flex;
   }
 }
 
+/*
 .apple {
   width: 50px;
   height: 50px;
   margin-bottom: 16px;
 }
-
 .heart {
   width: 44px;
   height: 50px;
   margin-bottom: 16px;
 }
-
+*/
 .measure {
   font-family: "Titan One", cursive;
   color: #d41443;
@@ -1936,6 +2022,22 @@ body.locations-modal-open {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .measure {
+    font-size: 58px;
+    line-height: 66px;
+    letter-spacing: 0.04em;
+    margin-bottom: 13px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .measure {
+    font-size: 58px;
+    line-height: 66px;
+    letter-spacing: 0.04em;
+    margin-bottom: 15px;
+  }
 }
 
 .how-text2 {
@@ -1948,10 +2050,44 @@ body.locations-modal-open {
   height: 36px;
   margin-bottom: 38px;
 }
+@media screen and (min-width: 768px) {
+  .how-text2 {
+    font-size: 14px;
+    line-height: 174%;
+    width: 180px;
+    height: 67px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .how-text2 {
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+    width: 330px;
+    height: 52px;
+  }
+}
 
 .span {
   display: block;
   margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .li-tablet {
+    margin-right: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .li-tablet {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .li-tablet:last-child {
+    margin-right: 0;
+  }
 }
 
 footer {
@@ -1987,7 +2123,7 @@ footer {
     width: 340px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .title-top {
     font-size: 30px;
     line-height: 1.13;
@@ -2019,7 +2155,7 @@ footer {
     margin-bottom: 91px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .title-bottom {
     font-size: 58px;
     line-height: 1.13;
@@ -2043,7 +2179,7 @@ footer {
     height: 34px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .social-list {
     margin-bottom: 50px;
     width: 151px;
@@ -2069,7 +2205,7 @@ footer {
     line-height: 1.85;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .footer-contact {
     font-size: 16px;
     line-height: 1.87;
@@ -2159,7 +2295,7 @@ footer {
     padding-bottom: 18px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .text-copyright {
     padding-top: 9px;
     padding-bottom: 10px;

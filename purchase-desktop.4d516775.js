@@ -117,19 +117,18 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"locations.js":[function(require,module,exports) {
+})({"purchase-desktop.js":[function(require,module,exports) {
 (function () {
   var refs = {
-    openModalBtn: document.querySelector('[locations-data-modal-open]'),
-    closeModalBtn: document.querySelector('[locations-data-modal-close]'),
-    modal: document.querySelector('[locations-data-modal]')
+    openModalBtn: document.querySelector("[desk-modal-open]"),
+    closeModalBtn: document.querySelector("[desk-modal-close]"),
+    backdrop: document.querySelector("[desk-backdrop]")
   };
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    document.body.classList.toggle('locations-modal-open');
-    refs.modal.classList.toggle('is-hidden');
+    refs.backdrop.classList.toggle("is-hidden");
   }
 })();
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -336,5 +335,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","locations.js"], null)
-//# sourceMappingURL=/locations.ad56b113.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","purchase-desktop.js"], null)
+//# sourceMappingURL=/purchase-desktop.4d516775.js.map
