@@ -58,7 +58,11 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;
-  width: 320px;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -110,6 +114,11 @@ header {
 @media (min-width: 768px) {
   .header-hero {
     max-height: 399px;
+  }
+}
+@media (min-width: 1280px) {
+  .header-hero {
+    max-height: 665px;
   }
 }
 
@@ -260,7 +269,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .button-div {
-    margin-left: 350px;
+    margin-left: 330px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -476,12 +485,14 @@ header {
 .products .ice-cream::before {
   content: "";
   position: absolute;
-  top: 25%;
-  left: 65%;
+  top: 0;
+  left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
+  width: 249px;
+  height: 253px;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: block;
   background-image: url(/m-products_ice-cream.6e959f35.png);
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -788,6 +799,11 @@ header {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 1280px) {
+  .hero-container {
+    height: 500px;
+  }
+}
 
 .hero-text {
   max-width: 218px;
@@ -839,6 +855,11 @@ h1 > span {
     padding-left: 14px;
   }
 }
+@media (min-width: 1280px) {
+  .text-button-cont {
+    padding-left: 70px;
+  }
+}
 
 .hero-btn-products {
   padding: 8px 15px;
@@ -876,6 +897,13 @@ h1 > span {
     margin: 31px 137px 46px 307px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .hero-box {
+    width: 400px;
+    height: 400px;
+    margin: 51px 137px 36px 370px;
+  }
+}
 
 .hero-image {
   width: 171px;
@@ -887,7 +915,13 @@ h1 > span {
   .hero-image {
     width: 143px;
     height: 336px;
-    padding: 32px 110px 0 71px;
+  }
+}
+@media (min-width: 1280px) {
+  .hero-image {
+    width: 200px;
+    height: 450px;
+    padding: 50px 94px 0 70px;
   }
 }
 
@@ -898,6 +932,12 @@ h1 > span {
   .hero-bio-eco {
     display: flex;
     position: absolute;
+  }
+}
+@media (min-width: 1280px) {
+  .hero-bio-eco {
+    left: 30px;
+    bottom: 40px;
   }
 }
 
@@ -912,6 +952,15 @@ h1 > span {
   line-height: 12px;
   color: #ffffff;
 }
+@media screen and (min-width: 1280px) {
+  .bio-eco-text {
+    width: 180px;
+    height: 78px;
+    line-height: 20px;
+    font-size: 14px;
+    left: 200px;
+  }
+}
 
 .milk-pic {
   display: none;
@@ -925,6 +974,12 @@ h1 > span {
     box-sizing: unset;
   }
 }
+@media screen and (min-width: 1280px) {
+  .milk-pic {
+    width: 188px;
+    height: 191px;
+  }
+}
 
 .hero-icon {
   position: absolute;
@@ -932,6 +987,12 @@ h1 > span {
   top: 347px;
   width: 18px;
   height: 18px;
+}
+@media screen and (min-width: 1280px) {
+  .hero-icon {
+    top: 410px;
+    left: 200px;
+  }
 }
 
 .tasty {
@@ -961,6 +1022,7 @@ h1 > span {
 @media (min-width: 1280px) {
   .tasty-girl {
     width: 293px;
+    left: 720px;
   }
 }
 
@@ -972,6 +1034,7 @@ h1 > span {
     display: flex;
     flex-direction: column;
     position: absolute;
+    left: -25px;
     padding: 0;
     margin: 0;
     z-index: 1;
@@ -981,6 +1044,7 @@ h1 > span {
 @media (min-width: 1280px) {
   .tasty-list {
     top: 35px;
+    left: 315px;
   }
 }
 
@@ -1058,11 +1122,6 @@ h1 > span {
   background: linear-gradient(to top, #fff5f6 90%, #ffffff 10%);
 }
 
-.cafe-section > .container {
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
 .card-list {
   margin-bottom: 54px;
 }
@@ -1070,26 +1129,49 @@ h1 > span {
   .card-list {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 81px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .card-list {
+    margin-bottom: 86px;
   }
 }
 
 .contacts-card {
   background: white;
-  max-width: 380px;
+  max-width: 220px;
   margin: auto;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-  padding: 43px 20px;
+  padding: 43px 18px;
+  margin-bottom: 0px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
 }
-.contacts-card:not(:last-child) {
-  margin-bottom: 20px;
+@media screen and (min-width: 768px) {
+  .contacts-card {
+    font-size: 14px;
+    padding: 50px 27px;
+    line-height: 29px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts-card {
+    font-size: 16px;
+    max-width: 330px;
+    padding: 51px 43px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts-card:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .card-name {
   display: inline-block;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
   background-color: #f0d1a5;
   border-radius: 4px;
   padding: 2px 24px 1px;
@@ -1099,31 +1181,60 @@ h1 > span {
 .contacts-card:nth-child(2n) .card-name {
   background-color: #c2e297;
 }
+@media screen and (min-width: 768px) {
+  .card-name {
+    padding: 5px 15px 4px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .card-name {
+    margin-bottom: 32px;
+  }
+}
 
 .card-description {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
   letter-spacing: 0.04em;
+  padding-bottom: 25px;
   margin-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+  line-height: 18px;
 }
 .card-description span {
+  display: inline-block;
   color: #000000;
-  line-height: 186%;
+  margin-bottom: 10px;
 }
 .card-description p {
   color: #907e82;
-  line-height: 18px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #e1e1e1;
+}
+@media screen and (min-width: 768px) {
+  .card-description {
+    margin-bottom: 30;
+    padding-bottom: 30px;
+    line-height: 23px;
+  }
+  .card-description span {
+    margin-bottom: 14px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .card-description {
+    margin-bottom: 32;
+    line-height: 29px;
+  }
+  .card-description span {
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
 }
 
 .card-visit-hours {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
   line-height: 186%;
   margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
 }
 .card-visit-hours span {
   color: #000000;
@@ -1131,17 +1242,44 @@ h1 > span {
 .card-visit-hours p {
   color: #ffa5ba;
 }
-.card-visit-hours .visit-hours_weekends {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #e1e1e1;
+.card-visit-hours div:first-child {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .card-visit-hours {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+  .card-visit-hours span {
+    margin-bottom: 14px;
+  }
+  .card-visit-hours div:first-child {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .card-visit-hours {
+    margin-bottom: 32;
+    padding-bottom: 32px;
+  }
+  .card-visit-hours span {
+    margin-bottom: 10px;
+  }
 }
 
 .contacts-link {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
   line-height: 18px;
   color: #907e82;
+}
+@media screen and (min-width: 768px) {
+  .contacts-link {
+    line-height: 25px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts-link {
+    line-height: 30px;
+  }
 }
 
 .cafe-btn {
@@ -1222,16 +1360,19 @@ h1 > span {
 }
 
 .galery-picture {
-  width: 320px;
+  width: 280px;
+  height: 122px;
 }
 @media screen and (min-width: 768px) {
   .galery-picture {
-    width: 740px;
+    width: 700px;
+    height: 264px;
   }
 }
 @media screen and (min-width: 1280px) {
   .galery-picture {
-    width: 1200px;
+    width: 1050px;
+    height: 430px;
   }
 }
 
