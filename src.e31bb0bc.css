@@ -485,14 +485,13 @@ header {
 .products .ice-cream::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 3%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 249px;
-  height: 253px;
+  height: 252px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  display: block;
   background-image: url(/m-products_ice-cream.6e959f35.png);
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -502,8 +501,10 @@ header {
 }
 @media (min-width: 768px) {
   .products .ice-cream::before {
-    top: 28%;
+    top: 2%;
     left: 50%;
+    width: 220px;
+    height: 226px;
     background-image: url(/t-products_ice-cream.6c3da447.png);
   }
 }
@@ -514,8 +515,10 @@ header {
 }
 @media (min-width: 1280px) {
   .products .ice-cream::before {
-    top: 8%;
+    top: -8%;
     left: 51%;
+    width: 335px;
+    height: 335px;
     background-image: url(/d-products_ice-cream.b860fd71.png);
   }
 }
@@ -531,11 +534,12 @@ header {
 .products .ice-coffee::before {
   content: "";
   position: absolute;
-  top: 25%;
-  left: 65%;
+  top: 3%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
+  width: 249px;
+  height: 252px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-image: url(/m-products_ice-coffee.c05a672c.png);
 }
@@ -546,8 +550,11 @@ header {
 }
 @media (min-width: 768px) {
   .products .ice-coffee::before {
-    top: 28%;
+    top: 2%;
     left: 50%;
+    width: 220px;
+    height: 226px;
+    background-size: 100% 100%;
     background-image: url(/t-products_ice-coffee.182c3792.png);
   }
 }
@@ -558,8 +565,10 @@ header {
 }
 @media (min-width: 1280px) {
   .products .ice-coffee::before {
-    top: 8%;
+    top: -8%;
     left: 51%;
+    width: 335px;
+    height: 335px;
     background-image: url(/d-products_ice-coffee.9db37686.png);
   }
 }
@@ -575,11 +584,12 @@ header {
 .products .milkshakes::before {
   content: "";
   position: absolute;
-  top: 25%;
-  left: 65%;
+  top: 3%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
+  width: 249px;
+  height: 252px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-image: url(/m-products_milkshakes.b92b42e5.png);
 }
@@ -590,8 +600,10 @@ header {
 }
 @media (min-width: 768px) {
   .products .milkshakes::before {
-    top: 28%;
+    top: 2%;
     left: 50%;
+    width: 220px;
+    height: 226px;
     background-image: url(/t-products_milkshakes.cc7b0d01.png);
   }
 }
@@ -602,8 +614,10 @@ header {
 }
 @media (min-width: 1280px) {
   .products .milkshakes::before {
-    top: 8%;
+    top: -8%;
     left: 51%;
+    width: 335px;
+    height: 335px;
     background-image: url(/d-products_milkshakes.3c60b956.png);
   }
 }
@@ -1579,6 +1593,16 @@ h1 > span {
   padding-top: 125px;
   background-color: #fff5f6;
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .how-it {
+    background-image: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .how-it {
+    width: 1090px;
+  }
+}
 
 .how-second-titel {
   font-family: "Titan One", cursive;
@@ -1613,6 +1637,19 @@ h1 > span {
   color: #000000;
   margin-bottom: 47px;
 }
+@media screen and (min-width: 768px) {
+  .how-dark-text {
+    width: 340px;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .how-dark-text {
+    width: 463px;
+  }
+}
 
 .how-light-text {
   width: 220px;
@@ -1622,6 +1659,19 @@ h1 > span {
   line-height: 162%;
   color: #907e82;
   margin-bottom: 17px;
+}
+@media screen and (min-width: 768px) {
+  .how-light-text {
+    width: 340px;
+    font-size: 14px;
+    line-height: 194%;
+    letter-spacing: 0.04em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .how-light-text {
+    width: 463px;
+  }
 }
 
 .btn-read-more {
@@ -1654,12 +1704,15 @@ h1 > span {
   .how-size {
     width: 340px;
     height: 339px;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
-@media screen and (min-width: 1279px) {
+@media screen and (min-width: 1090px) {
   .how-size {
     width: 516px;
     height: 516px;
+    margin-right: 74px;
   }
 }
 
@@ -1669,9 +1722,34 @@ h1 > span {
   margin-bottom: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .how-splash {
+    width: 740px;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .how-splash {
+    width: 1090px;
+    display: flex;
+  }
+}
+
 .how-text-position {
-  position: relative;
   padding: 0 30px;
+}
+@media screen and (min-width: 1280px) {
+  .how-text-position {
+    width: 1090px;
+    padding-top: 47px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .how-desktop {
+    width: 740px;
+    display: flex;
+  }
 }
 
 .apple {
