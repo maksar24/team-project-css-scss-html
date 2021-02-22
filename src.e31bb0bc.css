@@ -103,22 +103,27 @@ textarea {
 }
 
 header {
-  position: relative;
-}
-
-.header-hero {
-  overflow: hidden;
-  position: relative;
+  height: 502px;
   background-color: #ffb8ca;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
-  .header-hero {
-    max-height: 399px;
+  header {
+    height: 399px;
   }
 }
 @media (min-width: 1280px) {
+  header {
+    height: 665px;
+  }
+}
+
+.header-hero {
+  position: relative;
+}
+@media (min-width: 1280px) {
   .header-hero {
-    max-height: 665px;
+    height: 665px;
   }
 }
 
@@ -155,6 +160,7 @@ header {
 .header-container {
   position: absolute;
   display: contents;
+  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   .header-container {
@@ -828,6 +834,11 @@ header {
     max-width: 162px;
   }
 }
+@media (min-width: 1280px) {
+  .hero-text {
+    max-width: 277px;
+  }
+}
 
 h1 {
   font-family: Titan One;
@@ -840,6 +851,12 @@ h1 {
   h1 {
     font-size: 22px;
     line-height: 25px;
+  }
+}
+@media (min-width: 1280px) {
+  h1 {
+    font-size: 38px;
+    line-height: 44px;
   }
 }
 
@@ -857,11 +874,17 @@ h1 > span {
     line-height: 30px;
   }
 }
+@media (min-width: 1280px) {
+  h1 > span {
+    font-size: 58px;
+    line-height: 53px;
+  }
+}
 
 .text-button-cont {
   position: absolute;
   padding-top: 137px;
-  padding-bottom: 160px;
+  z-index: 1;
 }
 @media (min-width: 768px) {
   .text-button-cont {
@@ -871,11 +894,13 @@ h1 > span {
 }
 @media (min-width: 1280px) {
   .text-button-cont {
-    padding-left: 70px;
+    padding-top: 172px;
+    padding-left: 64px;
   }
 }
 
-.hero-btn-products {
+.hero-btn-products,
+.hero-btn-how {
   padding: 8px 15px;
   font-family: "DM Sans", sans-serif;
   font-size: 8px;
@@ -885,22 +910,32 @@ h1 > span {
   border-radius: 20px;
   border: none;
 }
+@media (min-width: 1280px) {
+  .hero-btn-products,
+.hero-btn-how {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
 
 .hero-btn-how {
-  padding: 8px 15px;
-  font-family: "DM Sans", sans-serif;
-  font-size: 8px;
-  line-height: 10px;
   color: #d41443;
   background-color: #ffffff;
-  border-radius: 20px;
-  border: none;
+}
+@media (min-width: 1280px) {
+  .hero-btn-how {
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 15px;
+  }
 }
 
 .hero-box {
+  position: absolute;
+  left: 36px;
+  top: 83px;
   width: 346px;
   height: 344px;
-  margin: 27px 0 75px 36px;
   border-radius: 50%;
   background: #ffa5ba;
 }
@@ -908,14 +943,16 @@ h1 > span {
   .hero-box {
     width: 324px;
     height: 322px;
-    margin: 31px 137px 46px 307px;
+    left: 307px;
+    top: 31px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero-box {
-    width: 400px;
-    height: 400px;
-    margin: 51px 137px 36px 370px;
+    left: 395px;
+    top: 52px;
+    width: 538px;
+    height: 538px;
   }
 }
 
@@ -929,13 +966,14 @@ h1 > span {
   .hero-image {
     width: 143px;
     height: 336px;
+    padding-top: 31px;
   }
 }
 @media (min-width: 1280px) {
   .hero-image {
-    width: 200px;
-    height: 450px;
-    padding: 50px 94px 0 70px;
+    width: 236px;
+    height: 557px;
+    padding: 56px 183px 0 119px;
   }
 }
 
@@ -968,7 +1006,7 @@ h1 > span {
 }
 @media screen and (min-width: 1280px) {
   .bio-eco-text {
-    width: 180px;
+    width: 210px;
     height: 78px;
     line-height: 20px;
     font-size: 14px;
@@ -1004,20 +1042,28 @@ h1 > span {
 }
 @media screen and (min-width: 1280px) {
   .hero-icon {
-    top: 410px;
+    top: 385px;
     left: 200px;
+    width: 26px;
+    height: 26px;
   }
 }
 
-.tasty {
+.cafes {
   display: none;
 }
 @media (min-width: 768px) {
-  .tasty {
+  .cafes {
     display: block;
     position: absolute;
     left: 691px;
     top: 94px;
+  }
+}
+@media (min-width: 1280px) {
+  .cafes {
+    left: 675px;
+    top: 114px;
   }
 }
 
@@ -1029,22 +1075,24 @@ h1 > span {
     display: block;
     position: absolute;
     width: 168px;
-    left: 566px;
+    left: 546px;
     top: 266px;
   }
 }
 @media (min-width: 1280px) {
   .tasty-girl {
     width: 293px;
-    left: 720px;
+    height: 232px;
+    left: 778px;
+    top: 433px;
   }
 }
 
-.tasty-list {
+.cafes-list {
   display: none;
 }
 @media (min-width: 768px) {
-  .tasty-list {
+  .cafes-list {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -1056,24 +1104,24 @@ h1 > span {
   }
 }
 @media (min-width: 1280px) {
-  .tasty-list {
+  .cafes-list {
     top: 35px;
     left: 315px;
   }
 }
 
-.tasty-item {
+.cafes-item {
   position: relative;
 }
-.tasty-item:first-child {
+.cafes-item:first-child {
   margin-bottom: 20px;
 }
 
-.tasty-item::after {
+.cafes-item::after {
   display: none;
 }
 @media (min-width: 768px) {
-  .tasty-item::after {
+  .cafes-item::after {
     content: "";
     display: block;
     position: absolute;
@@ -1088,46 +1136,50 @@ h1 > span {
   }
 }
 @media (min-width: 1280px) {
-  .tasty-item::after {
+  .cafes-item::after {
     width: 30px;
     height: 30px;
   }
 }
 
-.tasty-number {
+.cafes-number {
   display: inline-block;
   font-family: "Titan One", cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
   line-height: 32px;
-  letter-spacing: 0.91;
   color: #d41443;
   margin: 0;
   padding: 0;
 }
 @media (min-width: 768px) {
-  .tasty-number {
+  .cafes-number {
     font-size: 28px;
     line-height: 32px;
-    letter-spacing: 1.15;
+    letter-spacing: 0.04em;
+  }
+}
+@media (min-width: 1280px) {
+  .cafes-number {
+    font-size: 46px;
+    line-height: 53px;
   }
 }
 
-.tasty-text {
+.cafes-text {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 8px;
-  letter-spacing: 1.5;
   color: #ffffff;
   margin: 0;
   padding: 0;
 }
 @media (min-width: 1280px) {
-  .tasty-text {
-    font-size: 8px;
-    letter-spacing: 1.28;
+  .cafes-text {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
