@@ -120,9 +120,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"purchase-desktop.js":[function(require,module,exports) {
 (function () {
   var refs = {
-    openModalBtn: document.querySelector("[desk-modal-open]"),
-    closeModalBtn: document.querySelector("[desk-modal-close]"),
-    backdrop: document.querySelector("[desk-backdrop]")
+    openModalBtn: document.querySelector("[data-desk-modal-open]"),
+    closeModalBtn: document.querySelector("[data-desk-modal-close]"),
+    backdrop: document.querySelector("[data-desk-backdrop]")
   };
   refs.openModalBtn.addEventListener("click", toggleModal);
   refs.closeModalBtn.addEventListener("click", toggleModal);
@@ -159,7 +159,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50123" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61829" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

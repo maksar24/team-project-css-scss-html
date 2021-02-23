@@ -683,9 +683,11 @@ header {
   position: absolute;
   top: 20%;
   left: 1%;
+  background-color: #ffa5ba;
   width: 80px;
   height: 250px;
   border-radius: 8%;
+  background-color: #ffa5ba;
 }
 @media screen and (min-width: 768px) {
   .modal-purchase-circle {
@@ -1590,7 +1592,7 @@ body.locations-modal-open {
 }
 @media screen and (min-width: 768px) {
   .galery-div {
-    padding-right: 10px;
+    padding-right: 6px;
   }
 }
 
