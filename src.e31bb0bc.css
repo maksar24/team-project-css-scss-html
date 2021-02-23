@@ -944,6 +944,7 @@ h1 > span {
   font-family: "DM Sans", sans-serif;
   font-size: 8px;
   line-height: 10px;
+  cursor: pointer;
   color: #ffffff;
   background-color: #d41443;
   border-radius: 20px;
