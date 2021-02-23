@@ -1835,22 +1835,25 @@ body.locations-modal-open {
   margin: -1px;
 }
 
-.how-it {
-  background-image: url(/m-splash-of-milk-min.9b382cef.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-top: 125px;
-  background-color: #fff5f6;
+.splash {
+  background-image: none;
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .how-it {
-    background-image: none;
+@media screen and (max-width: 768px) {
+  .splash {
+    background-image: url(/m-splash-of-milk-min.9b382cef.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
-@media screen and (min-width: 1200px) {
-  .how-it {
-    width: 1090px;
+@media (min-width: 1200px) {
+  .splash {
+    background-image: url(/m-splash-of-milk-min.9b382cef.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 125px;
+    background-color: #fff5f6;
   }
 }
 
@@ -2006,20 +2009,6 @@ body.locations-modal-open {
   }
 }
 
-.cow {
-  margin-bottom: 16px;
-}
-@media screen and (min-width: 768px) {
-  .cow {
-    margin-bottom: 36px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .cow {
-    margin-bottom: 40px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .how-splash {
     width: 740px;
@@ -2049,18 +2038,6 @@ body.locations-modal-open {
   }
 }
 
-/*
-.apple {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 16px;
-}
-.heart {
-  width: 44px;
-  height: 50px;
-  margin-bottom: 16px;
-}
-*/
 .measure {
   font-family: "Titan One", cursive;
   color: #d41443;
@@ -2134,6 +2111,23 @@ body.locations-modal-open {
 @media screen and (min-width: 768px) {
   .li-tablet:last-child {
     margin-right: 0;
+  }
+}
+
+.cow-img {
+  width: 280px;
+  height: 279px;
+}
+@media (min-width: 768px) {
+  .cow-img {
+    width: 340px;
+    height: 339px;
+  }
+}
+@media (min-width: 1200px) {
+  .cow-img {
+    width: 540px;
+    height: 540px;
   }
 }
 
