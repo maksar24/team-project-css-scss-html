@@ -1678,7 +1678,7 @@ body.locations-modal-open {
 
 .gallery-image:hover,
 .gallery-image:focus {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 .slide-sec {
