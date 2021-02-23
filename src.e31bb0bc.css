@@ -1837,6 +1837,7 @@ body.locations-modal-open {
 
 .splash {
   background-image: none;
+  padding-top: 125px;
 }
 @media screen and (max-width: 768px) {
   .splash {
@@ -1852,7 +1853,6 @@ body.locations-modal-open {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 125px;
     background-color: #fff5f6;
   }
 }
