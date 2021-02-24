@@ -117,18 +117,28 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"menu.js":[function(require,module,exports) {
-(function () {
-  var menuBtnRef = document.querySelector("[data-menu-button]");
-  var mobileMenuRef = document.querySelector("[data-menu]");
-  menuBtnRef.addEventListener("click", function () {
-    var expanded = menuBtnRef.getAttribute("aria-expanded") === "true" || false;
-    menuBtnRef.classList.toggle("is-open");
-    menuBtnRef.setAttribute("aria-expanded", !expanded);
-    mobileMenuRef.classList.toggle("is-open");
-    document.body.classList.toggle("body-open");
+})({"scroll-behavior.js":[function(require,module,exports) {
+$(document).ready(function () {
+  // Добавить плавную прокрутку до всех ссылок
+  $("a").on('click', function (event) {
+    // Убедись в этом что .hash имеет значение перед переопределением поведения по умолчанию
+    if (this.hash !== "") {
+      // Запретить поведение щелчка якоря по умолчанию
+      event.preventDefault(); // Хранить хэш
+
+      var hash = this.hash; // Использование метода animate() jQuery для добавления плавной прокрутки страницы
+      // Необязательное число (800) указывает количество миллисекунд, необходимых для прокрутки до указанной области
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function () {
+        // Добавить хэш (#) для URL-адреса после завершения прокрутки (поведение щелчка по умолчанию)
+        window.location.hash = hash;
+      });
+    } // Конец, если
+
   });
-})();
+});
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -333,5 +343,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","menu.js"], null)
-//# sourceMappingURL=/menu.234110a1.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","scroll-behavior.js"], null)
+//# sourceMappingURL=/scroll-behavior.19a142fa.js.map
